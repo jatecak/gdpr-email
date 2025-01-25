@@ -1,0 +1,138 @@
+form.front {
+    max-width: 460px;
+    margin: 20px auto;
+    padding: 30px 10px 40px 10px;
+    border: 0px;
+    border-radius: 0px;
+    text-align: center;
+    background-color: #f9d66d;
+}
+
+form input:focus, form button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+form input[type="email"]:focus {
+    outline: 1px solid #d73301;
+    box-shadow: 0 0 5px rgba(0, 115, 170, 0.5);
+}
+
+.front label {
+    display: block;
+}
+
+.front input#email {
+    padding: 10px 5px;
+    font-size: 26px;
+    border-radius: 0px;
+    border: 1px solid #bd8f08;
+    text-align: center;
+}
+
+.front label.souhlas {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.souhlas input[type="checkbox"] {
+
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.souhlas input[type="checkbox"]:checked {
+    background-color: #0073aa; /* Barva pozadí pøi zaškrtnutí */
+    border-color: #005177; /* Barva okraje pøi zaškrtnutí */
+}
+
+
+/* Stylování tabulky pouze pro seznam uložených e-mailù */
+.gdpr-email-table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+}
+
+.gdpr-email-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.gdpr-email-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.gdpr-email-table a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.gdpr-email-table a:hover {
+    color: #005177;
+    text-decoration: underline;
+}
+
+/* Zebra efekt pro každý druhý øádek */
+.gdpr-email-table tr.alternate {
+    background-color: #f9f9f9;
+}
+
+/* Styl pro inputy a selecty v tabulce */
+.gdpr-email-table input,
+.gdpr-email-table select {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+}
+
+/* Zarovnání selectù a inputù */
+.gdpr-email-table select,
+.gdpr-email-table input {
+    text-align: left;
+}
+
+/* Tlaèítko uložit */
+.gdpr-email-table .button-primary {
+    margin-top: 15px;
+}
+
+/* Celkové pozadí (overlay) */
+#payment-popup {
+    display: none; /* Skryje popup okno, dokud není aktivní */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Èerné prùhledné pozadí */
+    z-index: 9999; /* Zajistí, že bude nad vším ostatním na stránce */
+}
+
+/* Kontejner pro popup okno */
+#payment-popup > div {
+    position: absolute;
+    top: 50%; /* Vertikální vycentrování */
+    left: 50%; /* Horizontální vycentrování */
+    transform: translate(-50%, -50%); /* Posun o polovinu vlastní šíøky a výšky */
+    width: 300px; /* Šíøka popup okna */
+    padding: 20px;
+    background: #f9d66d; /* Barva pozadí okna */
+    text-align: center; /* Text zarovnaný na støed */
+    border-radius: 0px; /* Zaoblení rohù */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Stín */
+}
+
+
