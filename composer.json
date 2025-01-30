@@ -1,0 +1,15 @@
+{
+  "name": "jarda/gdpr-email-plugin",
+  "description": "GDPR email plugin pro WordPress",
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=7.4",
+    "composer/installers": "^1.9",
+    "stripe/stripe-php": "^16.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "GDPRPlugin\\": "includes/"
+    }
+  }
+}
